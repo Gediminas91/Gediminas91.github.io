@@ -1,0 +1,16 @@
+const lightbulbSwitch = document.querySelector('#lightbulb-switch');
+const lightbulbImage = document.querySelector('#lightbulb-img');
+let isLightbulbOn = false;
+
+console.log(lightbulbSwitch);
+
+lightbulbSwitch.addEventListener('click', function() {
+    if (isLightbulbOn) {
+        lightbulbImage.src = 'off.png'
+        isLightbulbOn = false;
+    } else {
+        lightbulbImage.src = 'on.png'
+        isLightbulbOn = true;
+    }
+    console.log(isLightbulbOn);
+})
